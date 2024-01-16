@@ -11,14 +11,12 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.takealot.composenav.decompose.DecomposeActivity
 import com.takealot.composenav.navcomponent.NavigationComposeActivity
 import com.takealot.composenav.ui.theme.ComposeNavigationTheme
-import com.takealot.composenav.vogager.VoyagerActivity
+import com.takealot.composenav.voyager.VoyagerActivity
 import kotlin.reflect.KClass
 
 class MainActivity : ComponentActivity() {

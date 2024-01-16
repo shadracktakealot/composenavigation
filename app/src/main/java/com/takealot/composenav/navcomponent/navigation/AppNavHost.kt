@@ -37,7 +37,7 @@ fun AppNavHost(
         ) { backStackEntry ->
             val articleId = backStackEntry.arguments?.getString("articleId")
             if (articleId != null) {
-                ViewArticleScreen(articleId = articleId, navController = navController )
+                ViewArticleScreen(articleId = articleId, navController = navController)
             }
         }
     }

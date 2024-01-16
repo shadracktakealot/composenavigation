@@ -12,6 +12,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.takealot.composenav.data.DemoDataProvider
 import com.takealot.composenav.ui.components.ViewArticleContent
@@ -30,7 +31,7 @@ fun ViewArticleScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "View Article Screen: id=$articleId")
+                    Text(text = "ViewArticleScreen")
                 },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
@@ -43,7 +44,9 @@ fun ViewArticleScreen(
         if (article != null) {
             ViewArticleContent(
                 article = article,
-                modifier = Modifier.padding(paddingValues)
+                modifier = Modifier
+                    .padding(paddingValues)
+                    .padding(horizontal = 16.dp)
             )
         } else {
             Text(text = "Article not found")

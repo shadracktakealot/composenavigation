@@ -30,7 +30,7 @@
             android:name=".navcomponent.NavigationComposeActivity"
             android:theme="@style/Theme.ComposeNavigation" />
         <activity
-            android:name=".vogager.VoyagerActivity"
+            android:name=".voyager.VoyagerActivity"
             android:theme="@style/Theme.ComposeNavigation" />
     </application>
 

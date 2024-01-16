@@ -26,7 +26,7 @@ fun ArticleListScreen(navController: NavController) {
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "Article List Screen")
+                    Text(text = "ArticleListScreen")
                 }
             )
         }
