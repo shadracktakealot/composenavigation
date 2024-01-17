@@ -27,7 +27,7 @@
             android:name=".decompose.DecomposeActivity"
             android:theme="@style/Theme.ComposeNavigation" />
         <activity
-            android:name=".navcomponent.NavigationComposeActivity"
+            android:name=".navigationcomponent.NavigationComposeActivity"
             android:theme="@style/Theme.ComposeNavigation" />
         <activity
             android:name=".voyager.VoyagerActivity"

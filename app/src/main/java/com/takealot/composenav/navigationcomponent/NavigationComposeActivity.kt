@@ -1,4 +1,4 @@
-package com.takealot.composenav.navcomponent
+package com.takealot.composenav.navigationcomponent
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,7 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.takealot.composenav.navcomponent.navigation.AppNavHost
+import com.takealot.composenav.navigationcomponent.navigation.AppNavHost
 import com.takealot.composenav.ui.theme.ComposeNavigationTheme
 
 class NavigationComposeActivity : ComponentActivity() {

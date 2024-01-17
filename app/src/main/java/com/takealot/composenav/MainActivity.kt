@@ -14,7 +14,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.takealot.composenav.decompose.DecomposeActivity
-import com.takealot.composenav.navcomponent.NavigationComposeActivity
+import com.takealot.composenav.navigationcomponent.NavigationComposeActivity
 import com.takealot.composenav.ui.theme.ComposeNavigationTheme
 import com.takealot.composenav.voyager.VoyagerActivity
 import kotlin.reflect.KClass

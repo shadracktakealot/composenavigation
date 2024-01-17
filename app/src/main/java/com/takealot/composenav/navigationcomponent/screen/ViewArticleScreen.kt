@@ -1,4 +1,4 @@
-package com.takealot.composenav.navcomponent.screen
+package com.takealot.composenav.navigationcomponent.screen
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons

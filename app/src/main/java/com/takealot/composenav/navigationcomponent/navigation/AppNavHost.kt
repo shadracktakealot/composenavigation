@@ -1,4 +1,4 @@
-package com.takealot.composenav.navcomponent.navigation
+package com.takealot.composenav.navigationcomponent.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -7,8 +7,8 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.takealot.composenav.navcomponent.screen.ArticleListScreen
-import com.takealot.composenav.navcomponent.screen.ViewArticleScreen
+import com.takealot.composenav.navigationcomponent.screen.ArticleListScreen
+import com.takealot.composenav.navigationcomponent.screen.ViewArticleScreen
 
 sealed class NavigationItem(val route: String) {
     object ArticleList : NavigationItem(route = "article_list")

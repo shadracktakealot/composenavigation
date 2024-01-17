@@ -1,4 +1,4 @@
-package com.takealot.composenav.navcomponent.screen
+package com.takealot.composenav.navigationcomponent.screen
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -11,7 +11,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import com.takealot.composenav.data.DemoDataProvider
-import com.takealot.composenav.navcomponent.navigation.NavigationItem
+import com.takealot.composenav.navigationcomponent.navigation.NavigationItem
 import com.takealot.composenav.ui.components.ArticleListContent
 
 @OptIn(ExperimentalMaterial3Api::class)
