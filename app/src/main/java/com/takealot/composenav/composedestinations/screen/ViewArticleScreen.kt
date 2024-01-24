@@ -1,4 +1,4 @@
-package com.takealot.composenav.navigationcomponent.screen
+package com.takealot.composenav.composedestinations.screen
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -13,15 +13,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavController
+import com.ramcosta.composedestinations.annotation.Destination
+import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import com.takealot.composenav.data.DemoDataProvider
 import com.takealot.composenav.ui.components.ViewArticleContent
 
 @OptIn(ExperimentalMaterial3Api::class)
+@Destination
 @Composable
 fun ViewArticleScreen(
     articleId: String,
-    navController: NavController
+    navigator: DestinationsNavigator
 ) {
     val article = remember {
         DemoDataProvider.articleList.find { it.id == articleId }
@@ -34,7 +36,7 @@ fun ViewArticleScreen(
                     Text(text = "ViewArticleScreen")
                 },
                 navigationIcon = {
-                    IconButton(onClick = { navController.popBackStack() }) {
+                    IconButton(onClick = { navigator.popBackStack() }) {
                         Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "")
                     }
                 },

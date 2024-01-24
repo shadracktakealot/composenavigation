@@ -17,3 +17,10 @@ Decompose is a Kotlin Multiplatform library for breaking down your code into tre
 A multiplatform navigation library built for, and seamlessly integrated with, Jetpack Compose.
 
 >See code example [here](app/src/main/java/com/takealot/composenav/voyager)
+
+## [Compose Destinations]()
+
+A KSP library that processes annotations and generates code that uses Official Jetpack Compose Navigation under the hood. It hides the complex, non-type-safe and boilerplate code you would have to write otherwise.
+No need to learn a whole new framework to navigate - most APIs are either the same as with the Jetpack Components or inspired by them.
+
+> See code example [here](app/src/main/java/com/takealot/composenav/composedestinations)

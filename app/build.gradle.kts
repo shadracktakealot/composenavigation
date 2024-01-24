@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
+    id("com.google.devtools.ksp") version "1.8.10-1.0.9"
 }
 
 android {
@@ -31,11 +32,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     buildFeatures {
         compose = true
@@ -69,6 +70,10 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.6")
+
+    val composeDestinations = "1.9.62"
+    implementation("io.github.raamcosta.compose-destinations:core:$composeDestinations")
+    ksp("io.github.raamcosta.compose-destinations:ksp:$composeDestinations")
 
     val decomposeVersion = "2.1.4-compose-experimental"
     implementation("com.arkivanov.decompose:decompose:$decomposeVersion")

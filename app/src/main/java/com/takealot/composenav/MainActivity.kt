@@ -13,6 +13,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import com.takealot.composenav.composedestinations.ComposeDestinationsActivity
 import com.takealot.composenav.decompose.DecomposeActivity
 import com.takealot.composenav.navigationcomponent.NavigationComposeActivity
 import com.takealot.composenav.ui.theme.ComposeNavigationTheme
@@ -41,6 +42,9 @@ class MainActivity : ComponentActivity() {
                        }
                        Button(onClick = { startActivity(getIntent(VoyagerActivity::class)) }) {
                            Text(text = "Voyager")
+                       }
+                       Button(onClick = { startActivity(getIntent(ComposeDestinationsActivity::class)) }) {
+                           Text(text = "Compose Destinations")
                        }
                    }
                 }

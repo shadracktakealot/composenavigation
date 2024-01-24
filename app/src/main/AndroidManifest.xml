@@ -32,6 +32,10 @@
         <activity
             android:name=".voyager.VoyagerActivity"
             android:theme="@style/Theme.ComposeNavigation" />
+        <activity
+            android:name=".composedestinations.ComposeDestinationsActivity"
+            android:theme="@style/Theme.ComposeNavigation" />
+
     </application>
 
 </manifest>
